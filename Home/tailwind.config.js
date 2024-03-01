@@ -10,7 +10,7 @@ module.exports = {
             rubik:['rubiks']
         },
         colors:{
-            yellow: 'rgba(255, 214, 0, 1)'
+            yellow: 'rgba(255, 214, 0, 1)',
 
         }
     },
