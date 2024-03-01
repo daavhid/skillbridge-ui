@@ -43,6 +43,8 @@
     letter-spacing: 0.004em;
     text-align: left;
 
+
+
 }
 
 .navLink:hover div{
@@ -57,6 +59,23 @@
     background-color: white;
     transition: all 1s ease-in-out;
 }
+
+.services:hover > i {
+    color :rgba(255, 214, 0, 1);
+    
+}
+
+.services:hover span{
+    background-color: rgba(255, 214, 0, 1);
+}
+.services:hover span i{
+    font-size: 1rem;
+    color: black;
+}
+.services >i,.services span,.services span i{
+    transition: all .5s ease-in-out;
+}
+
 
 
 

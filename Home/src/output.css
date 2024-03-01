@@ -661,32 +661,24 @@ video {
   inset: -0.25rem;
 }
 
-.-bottom-\[10rem\] {
-  bottom: -10rem;
+.-bottom-\[2rem\] {
+  bottom: -2rem;
 }
 
-.-left-\[5rem\] {
-  left: -5rem;
+.-bottom-\[4rem\] {
+  bottom: -4rem;
 }
 
 .end-1 {
   inset-inline-end: 0.25rem;
 }
 
-.-bottom-\[11rem\] {
-  bottom: -11rem;
+.right-\[2rem\] {
+  right: 2rem;
 }
 
-.-bottom-\[15rem\] {
-  bottom: -15rem;
-}
-
-.-bottom-\[12rem\] {
-  bottom: -12rem;
-}
-
-.-bottom-\[13rem\] {
-  bottom: -13rem;
+.right-\[3rem\] {
+  right: 3rem;
 }
 
 .isolate {
@@ -874,6 +866,10 @@ video {
   height: 0.25rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-\[100vh\] {
   height: 100vh;
 }
@@ -882,20 +878,40 @@ video {
   height: 550px;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[1240px\] {
+  width: 1240px;
+}
+
 .w-\[30px\] {
   width: 30px;
+}
+
+.w-\[50\%\] {
+  width: 50%;
 }
 
 .w-\[500px\] {
   width: 500px;
 }
 
+.w-\[550px\] {
+  width: 550px;
+}
+
 .w-\[60\%\] {
   width: 60%;
 }
 
-.w-\[70\%\] {
-  width: 70%;
+.w-\[65\%\] {
+  width: 65%;
+}
+
+.w-\[83px\] {
+  width: 83px;
 }
 
 .w-\[this-is\\\\\] {
@@ -912,10 +928,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[50\%\] {
-  width: 50%;
 }
 
 .flex-shrink {
@@ -1268,6 +1280,10 @@ video {
   grid-auto-flow: column dense;
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1452,8 +1468,16 @@ video {
   justify-items: stretch;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-5 {
@@ -1784,6 +1808,10 @@ video {
   border-radius: 8px;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1913,6 +1941,11 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1924,6 +1957,10 @@ video {
 
 .bg-yellow\/40 {
   background-color: rgba(255, 214, 0, 0.4);
+}
+
+.bg-gradient1 {
+  background-image: linear-gradient(270deg, rgba(1, 39, 55, 1) 0%, #0D4D69 100%);;
 }
 
 .decoration-slice {
@@ -2041,6 +2078,10 @@ video {
      object-position: top;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2066,6 +2107,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -2076,9 +2122,22 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-left {
@@ -2137,9 +2196,29 @@ video {
   vertical-align: super;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-\[60px\]\/\[70\.84px\] {
+  font-size: 60px;
+  line-height: 70.84px;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -2152,6 +2231,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .uppercase {
@@ -2236,9 +2319,18 @@ video {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.text-color2 {
+  color:  rgba(1, 39, 55, 1);
+}
+
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2622,6 +2714,23 @@ video {
   transition: all 1s ease-in-out;
 }
 
+.services:hover > i {
+  color :rgba(255, 214, 0, 1);
+}
+
+.services:hover span{
+  background-color: rgba(255, 214, 0, 1);
+}
+
+.services:hover span i{
+  font-size: 1rem;
+  color: black;
+}
+
+.services >i,.services span,.services span i{
+  transition: all .5s ease-in-out;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2712,6 +2821,7 @@ video {
     }
   }
 }
+
 
 
 
