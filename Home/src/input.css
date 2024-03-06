@@ -18,12 +18,34 @@
 
 .bg-fill{
     background-image: url('../assets/hero.jpeg');
+    background-attachment: fixed;
     background-position: center top ;
     background-size: cover;
     position: relative;
     z-index: 1;
 }
 
+.bg-about{
+    background-image: url('../assets/home.jpeg');
+    background-position: center top ;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+.bg-about::after{
+    z-index: -300;
+    content: '';
+    height: 100%;
+    width: 100%;
+
+    /* background-color: black; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(1, 39, 55, 0.8);
+}
 .bg-fill::after{
     z-index: -300;
     content: '';
@@ -76,6 +98,38 @@
     transition: all .5s ease-in-out;
 }
 
+#hero-text p::after{
+    content: 'A supportive learning environment with access to mentors and project opportunities.';
+
+    animation: text 7s infinite ease-out reverse;
+
+}
+
+
+@keyframes text {
+   
+
+    25%{
+        opacity: 0.7;
+    }
+
+    45%{
+        opacity: 1;
+    }
+
+   
+    50%{
+        content: 'Actively manage and adjust planned timelines and activities to overcome challenges,meet deadlines';
+        
+    }
+    75%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
 
 
 
